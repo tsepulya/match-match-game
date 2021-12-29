@@ -1,0 +1,62 @@
+
+a {
+    text-decoration:none;
+    color: #fff;
+  }
+  
+  .header {
+    font-size: 12px;
+    height: 64px;
+    color: #fff;
+    background-color: var(--blue-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 64px;
+  }
+  
+
+  
+  .logoMatchBottom {
+    color: var(--blue-color);
+    background-color: #fff;
+  }
+  
+  .game-condition {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 210px;
+  }
+  
+  .game-condition_btn {
+    width: 207px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1.25px;
+    background: var(--light-color);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), 0px 1px 18px rgba(0, 0, 0, 0.12),
+      0px 6px 10px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: var(--blue-color);
+    border: 0;
+  }
+  
+  .ava {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  .ava__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }

@@ -1,0 +1,15 @@
+:root {
+    --blue-color: #2196f3;
+    --grey-color: rgba(33, 33, 33, 0.08);
+    --light-color: #f2f9fe;
+    --light-blue-color: #e3f2fd;
+    --sea-color: #018786;
+    --dark-grey-color: #333333;
+    --grey-color: #e5e5e5;
+  }
+  
+  .wrapper {
+    margin: 0 auto;
+    font-family: Roboto;
+    font-weight: 400;
+  }

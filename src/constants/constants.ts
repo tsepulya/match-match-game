@@ -1,0 +1,1 @@
+export const WRAPPER = <HTMLElement>document.querySelector('.wrapper');
