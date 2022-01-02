@@ -1,0 +1,111 @@
+.game-container {
+    margin: 0 auto;
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    perspective: 1000px;
+    border: 1px solid rgb(211, 189, 189);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    background-color: #fff;
+}
+
+.front {
+    background: url(../../assets/card-closed.png) no-repeat center;
+    background-size: cover;
+}
+
+.back {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+.front-close {
+    transform: rotateY(180deg);
+}
+
+.back-open {
+    transform: rotateY(360deg);
+}
+
+.front-stable {
+    transform: rotateY(180deg);
+}
+
+.back-stable {
+    transform: rotateY(360deg);
+}
+
+.main__timer {
+    width: 256px;
+    height: 64px;
+    margin-bottom: 60px;
+    background-color: #fff;
+    margin-left: 372px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 36px;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/*congratulation///////////*/
+
+.congratulation {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0%, 0%, 0%, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.congratulation_block {
+    background-color: #fff;
+    width: 360px;
+    height: 112px;
+    padding-left: 16px;
+}
+
+.congratulation_btn {
+    background-color: var(--blue-color);
+    color: #fff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    border: 0;
+    text-transform: uppercase;
+    width: 54px;
+    height: 36px;
+    margin-left: 154px;
+}
+
+.active-cursor:hover {
+    cursor: pointer;
+}
