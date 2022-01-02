@@ -1,4 +1,5 @@
 import { GAME_SETTINGS, TIMEOUTS, user } from "../constants/constants";
+import { deleteMain } from "./deleteMain";
 import { stopGame } from "./stopGame";
 
 function findTimeforScore(): number {
@@ -28,7 +29,7 @@ export function deleteCongratulations(): void {
 function returnToScore() {
   deleteCongratulations();
   stopGame();
-  //   deleteMain();
+  deleteMain();
   //   createPageScore();
   const iconScore = <HTMLElement>document.querySelector('.icon_score');
   const textScore = <HTMLElement>document.querySelector('.nav_text_score');

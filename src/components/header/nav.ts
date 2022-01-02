@@ -25,7 +25,7 @@ export function createNav(): void {
   navigation.innerHTML = template;
   const myContainer = <HTMLElement>document.querySelector('.header-container');
   myContainer.append(navigation);
-  // document
-  //   .querySelectorAll('.nav__item')
-  //   .forEach((elem) => elem.addEventListener('click', createNavigation)); 
+//   document
+//     .querySelectorAll('.nav__item')
+//     .forEach((elem) => elem.addEventListener('click', createNavigation)); 
 }
