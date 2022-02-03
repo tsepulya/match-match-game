@@ -12,7 +12,6 @@ export function createPageGame(): void {
   mainPageGame.innerHTML = template;
   WRAPPER.append(mainPageGame);
 
-  // вынести далее в отдельную функцию
   const iconScore = <HTMLElement>document.querySelector('.icon_score');
   const textScore = <HTMLElement>document.querySelector('.nav_text_score');
   const iconAbout = <HTMLElement>document.querySelector('.icon__about');
