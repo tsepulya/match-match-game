@@ -1,4 +1,5 @@
-let timer: HTMLElement;
+import { TIMEOUTS } from "../constants/constants";
+
 let createTimer: ReturnType<typeof setTimeout>;
 let showTime: ReturnType<typeof setTimeout>;
 let sec: number;
@@ -6,8 +7,8 @@ let sec: number;
 export function createGameTimer(): void {
   let secString = '00';
   let minString = '00';
-  timer = <HTMLElement>document.querySelector('.main__timer');
-  timer.innerHTML = `${minString}:${secString}`;
+  TIMEOUTS.timer = <HTMLElement>document.querySelector('.main__timer');
+  TIMEOUTS.timer.innerHTML = `${minString}:${secString}`;
   function putMinAndSec() {
     const secNumber = +secString + 1;
     if (secNumber < 10) {
@@ -26,7 +27,8 @@ export function createGameTimer(): void {
     if (secNumber > 9 && secNumber < 60) {
       secString = secNumber.toString();
     }
-    timer.innerHTML = `${minString}:${secString}`;
+    TIMEOUTS.timer = <HTMLElement>document.querySelector('.main__timer');
+    TIMEOUTS.timer.innerHTML = `${minString}:${secString}`;
   }
   createTimer = setInterval(putMinAndSec, 1000);
 }
@@ -41,11 +43,11 @@ function reverseTime(): void {
     createGameTimer();
   }
   sec -= 1;
-  timer = <HTMLElement>document.querySelector('.main__timer');
+  TIMEOUTS.timer = <HTMLElement>document.querySelector('.main__timer');
   if (sec < 10) {
-    timer.innerHTML = `00:0${sec}`;
+    TIMEOUTS.timer.innerHTML = `00:0${sec}`;
   } else {
-    timer.innerHTML = `00:${sec}`;
+    TIMEOUTS.timer.innerHTML = `00:${sec}`;
   }
 }
     

@@ -1,4 +1,5 @@
 import { GAME_SETTINGS, TIMEOUTS, user } from "../constants/constants";
+import { createPageScore, IDB } from "../containers/score/score";
 import { deleteMain } from "./deleteMain";
 import { stopGame } from "./stopGame";
 
@@ -30,7 +31,7 @@ function returnToScore() {
   deleteCongratulations();
   stopGame();
   deleteMain();
-  //   createPageScore();
+  createPageScore();
   const iconScore = <HTMLElement>document.querySelector('.icon_score');
   const textScore = <HTMLElement>document.querySelector('.nav_text_score');
   iconScore.classList.add('active-icon');
@@ -57,7 +58,7 @@ export function createCongratulations(): void {
       );
     congrarulationBtn.addEventListener('click', returnToScore);
     if (user.score > 0) {
-      // IDB();
+      IDB();
     }
   }
 }

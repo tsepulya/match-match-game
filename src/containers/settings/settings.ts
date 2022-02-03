@@ -1,6 +1,5 @@
-// import { setNumberOfCards, setPictureOfCards } from './script-game';
-
 import { WRAPPER } from "../../constants/constants";
+import { setPictureOfCards, setNumberOfCards } from "../../services/setGameSettings";
 import './settings.css';
 
 export function createPageSettings(): void {
@@ -32,8 +31,8 @@ export function createPageSettings(): void {
   mainPageSettings.className = 'main';
   mainPageSettings.innerHTML = template;
   WRAPPER.append(mainPageSettings);
-//   const selectPic = <HTMLElement>document.querySelector('.select_pic');
-//   selectPic.addEventListener('change', setPictureOfCards);
-//   const selectDif = <HTMLElement>document.querySelector('.select_diff');
-//   selectDif.addEventListener('change', setNumberOfCards);
+  const selectPic = <HTMLElement>document.querySelector('.select_pic');
+  selectPic.addEventListener('change', setPictureOfCards);
+  const selectDif = <HTMLElement>document.querySelector('.select_diff');
+  selectDif.addEventListener('change', setNumberOfCards);
 }
