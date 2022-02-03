@@ -1,0 +1,38 @@
+:root {
+    --blue-color: #2196f3;
+    --grey-color: rgba(33, 33, 33, 0.08);
+    --light-color: #f2f9fe;
+    --light-blue-color: #e3f2fd;
+    --sea-color: #018786;
+    --dark-grey-color: #333333;
+    --grey-color: #e5e5e5;
+  }
+  
+  .wrapper {
+    margin: 0 auto;
+    font-family: Roboto;
+    font-weight: 400;
+  }
+
+  .main {
+    width: 1000px;
+    height: 802px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    color: #000;
+    margin: 0 auto;
+    padding-top: 28px;
+  }
+  
+  .main__title {
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 28px;
+    margin-left: 100px;
+    padding-bottom: 10px;
+  }
+  
+  .main-container {
+    display: flex;
+    justify-content: space-evenly;
+  }

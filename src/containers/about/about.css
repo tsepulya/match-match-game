@@ -1,0 +1,189 @@
+.rule {
+    width: 360px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding-top: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.rule-first {
+    height: 230px;
+}
+
+.rule-second {
+    height: 132px;
+}
+
+.rule-third {
+    height: 240px;
+}
+
+.rule__number {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 24px;
+    background-color: var(--blue-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.rule__text {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 272px;
+}
+
+.example__registr {
+    width: 302px;
+    height: 218px;
+    background-color: #fff;
+}
+
+.example__title {
+    margin-left: 10px;
+    padding-top: 6px;
+}
+
+.example__forms {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.example__form {
+    background-color: var(--grey-color);
+    margin-left: 10px;
+    width: 145px;
+    margin-bottom: 6px;
+    position: relative;
+}
+
+.example__input_text {
+    border: 0;
+    background-color: rgba(33, 33, 33, 0);
+    width: 90%;
+}
+
+.example__label {
+    color: rgba(0, 0, 0, 0.38);
+    font-size: 12px;
+}
+
+::placeholder {
+    font-style: 22px;
+    color: #000;
+}
+
+.example__checkbox {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+}
+
+.registr__ava-img {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.registr__btn_add,
+.registr__btn_cancel {
+    border: 0;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 4px;
+}
+
+.refistr__btn-container {
+    margin-top: 5px;
+    margin-left: 162px;
+}
+
+.registr__btn_add {
+    background-color: var(--blue-color);
+    color: #fff;
+}
+
+.registr__btn_cancel {
+    background-color: var(--light-blue-color);
+    color: var(--blue-color);
+} 
+
+.main__settings_example {
+    width: 116px;
+    height: 74px;
+    background-color: var(--blue-color);
+    color: #fff;
+    margin-top: 64px;
+}
+
+.main__settings_example-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.example_settings_text {
+    margin-top: 10px;
+}
+
+.main__cards_example {
+    width: 330px;
+    height: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.example__card {
+    width: 74px;
+    height: 74px;
+}
+
+.card-hidden {
+    display: none;
+}
+
+.card-container {
+    width: 168px;
+    height: 168px;
+    perspective: 300px;
+}
+
+.game-card {
+    width: 168px;
+    height: 168px;
+}
+
+.example__card {
+    background: url(../../assets/card-closed.png) no-repeat;
+    background-size: cover;
+}
+
+.example__card-opened {
+    background: url(../../assets/animal-penguin.png) no-repeat center;
+    background-size: cover;
+}
+
+.card-true {
+    background: rgba(10, 207, 131, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.card-false {
+    background: rgba(242, 78, 30, 0.5);
+    width: 100%;
+    height: 100%;
+}
